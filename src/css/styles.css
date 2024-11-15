@@ -242,12 +242,16 @@ body {
 
 /* Estilos para o rightside */
 .rightside {
-    background-image: url(./img/backleft.png);
+    background-image: url(./img/backleft.jpg);
     flex: 1; /* Faz com que a rightside ocupe o espaço disponível */
     padding: 0; /* Remove qualquer espaçamento interno */
     margin: 0; /* Remove qualquer espaçamento externo */
-
+    background-size: cover; /* Faz com que a imagem cubra a área da div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('./img/backleft.jpg');
 }
+
 
 .leftside, .rightside{
     flex: 0 0 50%; /* Não permite crescimento nem encolhimento, ocupa 50% */
@@ -610,7 +614,7 @@ body {
 
 .service2 {
     display: block;
-    background-color: #555; /* Cor de fundo */
+    background-color: #998010;; /* Cor de fundo */
     color: white; /* Cor do texto */
     padding: 20px;
     text-align: center;
@@ -638,7 +642,7 @@ body {
 }
 
 .service1:nth-child(4) {
-    background-color: #998010; /* Cor mais escura */
+    background-color: #998010;; /* Cor mais escura */
 }
 
 .types-services2 p {
@@ -655,6 +659,5 @@ body {
 /* SERVICOS TELA MENOR */
 
 .texto{
-
     margin: 50px;
 }
